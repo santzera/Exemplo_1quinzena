@@ -6,26 +6,22 @@ export default class Inicial extends React.Component{
         return(
             <View style={styles.conteudoBtns}>
                 <Button style={styles.conteudoBtns}
-                    title="Adicionar Item"
-                    color="Blue"
+                    title="Adicionar item"
+                    color="green"
                     onPress={() =>
-                    this.props.navigation.navigate('AdicionaItens')
-                    }
+                    this.props.navigation.navigate('AdicionaItens')    
+                    }                
                 />
                 <Button style={styles.conteudoBtns}
-                    title="Lista Itens"
-                    color="Red"
+                    title="Lista itens"
+                    color="blue"
                     onPress={() =>
-                    this.props.navigation.navigate('ListaItens')
-                    }
-                />
-
-            </View>    
-
+                    this.props.navigation.navigate('ListaItens')    
+                    }                
+                />  
+            </View>
         );
-        }
-
-}
+}}
 const styles = StyleSheet.create({
     conteudoBtns:{
         flex: 1,
